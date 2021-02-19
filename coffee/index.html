@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js.js">
+    <title>Kafe</title>
+</head>
+
+<body>
+    <section>
+        <div class="rrethi"></div>
+        <header>
+            <a href="#"><img src="img/logo.png" class="logo"></a>
+            <ul>
+                <li> <a href="#">Intro</a> </li>
+                <li> <a href="#">Menu</a> </li>
+                <li> <a href="#">Diqka e re</a> </li>
+                <li> <a href="#">Kontakti</a> </li>
+            </ul>
+        </header>
+        <div class="kontenti">
+            <div class="textBox">
+                <h2>Nuk është vetem Kafe <br>Është <span>Starbucks</span> </h2>
+                <p>"Është e mahnitshme se si bota fillon të ndryshojë <br>
+                    përmes syve të filxhanit te kafesë"</p>
+                <a href="#">Meso me shumë</a>
+
+            </div>
+            <div class="imgBox">
+                <img src="img/img1.png" class="Starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><a href="#"><img src="img/img1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></a></li>
+            <li><a href="#"><img src="img/img2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')"></a></li>
+            <li><a href="#"><img src="img/img3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></a></li>
+        </ul>
+
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+
+
+   <script type="text/javascript">
+
+function imgSlider(anything){
+    document.querySelector('.Starbucks').src = anything;
+}
+function changeCircleColor(color){
+    const rrethi = document.querySelector('.rrethi');
+    circle.style.background = color;
+}
+</script>
+</body>
+
+</html>
